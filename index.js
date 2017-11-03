@@ -20,7 +20,6 @@
   goButton.addEventListener('mouseleave', logMouseLeave);
 
 
-
   function changeLight() {
     if (event.target === stopButton) {
       stopLight.classList.toggle('stop');
@@ -32,11 +31,11 @@
   }
 
   function logMouseEnter() {
-    console.log(`Entered ${event.target.getAttribute('id')} button`);
+    console.log(`Entered ${event.target.innerText} button`);
   }
 
   function logMouseLeave() {
-    console.log(`Left ${event.target.getAttribute('id')} button`);
+    console.log(`Left ${event.target.innerText} button`);
   }
 
 
