@@ -18,25 +18,33 @@
   slowButton.addEventListener('mouseleave', logMouseLeave);
   goButton.addEventListener('mouseenter', logMouseEnter);
   goButton.addEventListener('mouseleave', logMouseLeave);
+  document.addEventListener('toggle', toggleLog);
 
 
   function changeLight() {
-    if (event.target === stopButton) {
-      stopLight.classList.toggle('stop');
-    } else if (event.target === slowButton) {
-      slowLight.classList.toggle('slow');
-    } else if (event.target === goButton) {
-      goLight.classList.toggle('go');
+    switch (event.target) {
+      case stopButton:
+        stopLight.classList.toggle('stop');
+        break;
+      case slowButton:
+        slowLight.classList.toggle('slow');
+        break;
+      case goButton:
+        goLight.classList.toggle('go');
+        break;
     }
   }
 
   function logMouseEnter() {
-    console.log(`Entered ${event.target.innerText} button`);
+    console.log(`Entered ${event.target.textContent} button`);
   }
 
   function logMouseLeave() {
-    console.log(`Left ${event.target.innerText} button`);
+    console.log(`Left ${event.target.textContent} button`);
   }
 
+  function toggleLog() {
+    console.log(`this works`);
+  }
 
 })();
