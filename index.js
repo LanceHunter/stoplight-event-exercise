@@ -25,26 +25,26 @@
       case stopButton:
         stopLight.classList.toggle('stop');
         if (stopLight.classList.contains('stop')) {
-        console.log(`${event.target.textContent} bulb on`);
-      } else {
-        console.log(`${event.target.textContent} bulb off`);
-      }
+          console.log(`${event.target.textContent} bulb on`);
+        } else {
+          console.log(`${event.target.textContent} bulb off`);
+        }
         break;
       case slowButton:
         slowLight.classList.toggle('slow');
         if (slowLight.classList.contains('slow')) {
-        console.log(`${event.target.textContent} bulb on`);
-      } else {
-        console.log(`${event.target.textContent} bulb off`);
-      }
+          console.log(`${event.target.textContent} bulb on`);
+        } else {
+          console.log(`${event.target.textContent} bulb off`);
+        }
         break;
       case goButton:
         goLight.classList.toggle('go');
         if (goLight.classList.contains('go')) {
-        console.log(`${event.target.textContent} bulb on`);
-      } else {
-        console.log(`${event.target.textContent} bulb off`);
-      }
+          console.log(`${event.target.textContent} bulb on`);
+        } else {
+          console.log(`${event.target.textContent} bulb off`);
+        }
         break;
     }
   }
